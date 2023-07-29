@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <div class="form-container">
+        <form id="registration-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input type="text" id="usn" name="usn" placeholder="USN" required />
+          <input
+            type="text"
+            id="branch"
+            name="branch"
+            placeholder="Branch"
+            required
+          />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+            required
+          />
+          <select id="gender" name="gender" required>
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="submitted-data">
+          <div class="data-container">
+            <div id="displayed-data"></div>
+            <div id="displayed-image"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
